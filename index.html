@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <title>Personal Website</title>
+</head>
+<body>
+    <div class="box" id="box">
+        <img src="profile3.jpg" class="box-img"> 
+        <h1>Paul Malaki</h1>
+        <h5>Read Some:</h5>
+        <p>I am a person who is positive about every aspect of life. There are many things I like to do, to see,
+            and to experience. I like to read, I like to write; I like to think, I like to dream; I like to talk,
+            I like to listen. I like to see the sunrise in the morning, I like to see the moonlight at night;
+            I like to feel the music flowing on my face, I like to smell the wind coming from the ocean.
+            I like to look at the clouds in the sky with a blank mind, I like to do thought experiment when I cannot
+            sleep in the middle of the night. I like flowers in spring, rain in summer, leaves in autumn, and snow in
+            winter. I like to sleep early, I like to get up late; I like to be alone, I like to be surrounded by people.
+            I like countries peace, I like metropolis noise; I like the beautiful west lake in Hangzhou, I like
+            the flat cornfield in Champaign. I like delicious food and comfortable shoes; I like good books and romantic
+            movies. I like the land and the nature, I like people. And, I like to laugh.
+        </p>
+        <h6>You can follow @:</h6>
+        <ul>
+            <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        </ul>
+    </div>
+    <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="#box">Home</a></li>
+                <li><a href="#Picz">Picz</a></li>
+                <li><a href="#Vidz">Vidz</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menuBtn">
+        <img src="menu.png" id="menu">
+    </div>
+    <section>
+        <div class="Picz" id="Picz">
+            <h1>Picz:</h1>
+            <img src="profile1.jpg" class="box-img1"><br>
+            <img src="picz1.jpg" class="box-img1"><br>
+            <img src="picz3.jpg" class="box-img1"><br>
+        </div>
+    </section>
+    <section>
+        <div class="Vidz" id="Vidz">
+            <h1>Vidz:</h1>
+            <video src="vidz.mp4" class="box-vid" controls></video>
+        </div>
+    </section>
+    <script>
+        var menuBtn = document.getElementById("menuBtn")
+        var sideNav = document.getElementById("sideNav")
+        var menu = document.getElementById("menu")
+
+        sideNav.style.right = "-250px";
+
+        menuBtn.onclick = function(){
+            if (sideNav.style.right == "-250px"){
+                sideNav.style.right = "0";
+                menu.src = "Close.jpg";
+            }
+            else {
+                sideNav.style.right = "-250px";
+                menu.src = "menu.png";
+            }
+        }
+    </script>
+</body>
+</html>
